@@ -6,10 +6,65 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="src/main.js" type="module" defer></script>
+    <video width="1280" height="720" controls>
+  <source src="4729195-hd_1920_1080_25fps.mp4" type="video/mp4">
+</video>
+<section class="hero">
+  <h1>Le football suisse régional joue sur le terrain du digital</h1>
+  <p>Le meilleur du football suisse, réuni au même endroit</p>
+  <a href="#download" class="btn-primary">Aller au formulaire</a>
+</section>
 
+    
 </head>
 <body>
-    <!-- data-bind-global="count" : Affiche le nombre total de rapports (métadonnées globales) -->
+    <section class="stats">
+  <div class="stat">
+    <strong>29</strong>
+    <span>Clubs étudiés</span>
+  </div>
+  <div class="stat">
+    <strong>6</strong>
+    <span>Cantons représentés</span>
+  </div>
+  <div class="stat">
+    <strong>+10</strong>
+    <span>Outils digitaux analysés</span>
+  </div>
+  <div class="stat">
+    <strong>+4</strong>
+    <span>Ligues considérées</span>
+  </div>
+</section>
+<section class="benefits">
+  <h2>Pourquoi devrai-je le télécharger ?</h2>
+
+  <div class="benefit-list">
+    <div class="benefit">
+      <i class="icon"></i>
+      <h3>Benchmark inédit</h3>
+      <p>Comparaison des pratiques digitales des clubs.</p>
+    </div>
+    ...
+  </div>
+</section>
+<section class="trust">
+  <h2>Vous pouvez nous faire confiance car…</h2>
+  <p>Ce rapport s’appuie sur l’analyse complète de 29 clubs...</p>
+</section>
+<section class="clubs">
+  <h2>Clubs analysés</h2>
+  <div id="teams-container"></div>
+  <div class="team-card">
+  <div class="team-logo">Blason</div>
+  <h3>{{name}}</h3>
+  <p>{{city}} – {{canton}}</p>
+  <p>{{level}}</p>
+</div>
+
+</section>
+
+<!-- data-bind-global="count" : Affiche le nombre total de rapports (métadonnées globales) -->
     <h1 data-bind-global="count"></h1>
     
     <!-- id="teamList" : Conteneur où seront ajoutés dynamiquement les éléments de l'équipe. Le nom de cet ID ne doit pas être modifié. -->
