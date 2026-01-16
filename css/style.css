@@ -290,16 +290,15 @@ header {
 }
 .clubs {
   background-color: #ffffff;
-  padding: 9rem 2rem 2rem auto;
+  padding: 9rem 1rem 1rem auto;
 }
 .clubs h1 {
   font-size: 3.2rem;
   font-weight: bold;
   color: #3b1713;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
     text-align: left;
     display: inline;
-    
 }
 
 .teamName{
@@ -307,13 +306,6 @@ header {
     margin-top: 50px;
     color: #3b1713;
     font-weight: 600;
-    align-items: bottom;
-}
-#teamList {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.2rem;
-    overflow-x: hidden;
     align-items: bottom;
 }
 
@@ -329,7 +321,7 @@ header {
 #blablaformulaire{
   background-color :#ffffff;
   text-align: center;
-  margin-top: -3rem;
+  margin-top: 100px;
 }
 
 
@@ -377,16 +369,43 @@ footer hr {
    SCROLL HORIZONTAL DES CLUBS
 ========================== */
 
-#teamList {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-
-  overflow-x: auto;
-  overflow-y: hidden;
-
-  padding: 2rem 1rem;
-  scroll-snap-type: x mandatory;
+html, body {
+  overflow-x: hidden;
+}
+ 
+#teamList{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    animation: scroll-left 21s linear infinite;
+    margin-bottom: -80px;
+}
+ 
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+ 
+ 
+div#teamList img{
+    width: 100px;
+    margin-inline: 70px;
+ 
+}
+ 
+div#teamList img:hover{
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
+    transform: scale(1.3);
+    filter: saturate(1);
+}
+ 
+#scroll-team-logo {
+    overflow: hidden;
 }
 
 /* Chaque club généré par le JS */
@@ -394,8 +413,6 @@ footer hr {
   flex: 0 0 auto;        /* empêche le retour à la ligne */
   min-width: 140px;      /* taille raisonnable des blocs */
   text-align: center;
-
-  scroll-snap-align: start;
   width : 10px
 }
 
