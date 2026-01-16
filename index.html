@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Analyse de l’écosystème digital des clubs de football en Suisse romande. Réseaux sociaux, sites web, visibilité et opportunités marketing. Rapport gratuit.">
+    <!-- apparaît dans google-->
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="src/main.js" type="module" defer></script>
@@ -32,7 +34,7 @@
   </div>
 
   <div class="stats-right">
-    <img src="pexels-tima-miroshnichenko-6078298.jpg" alt="Ballon de football" class="stats-bg">
+    <img src="pexels-tima-miroshnichenko-6078298.jpg" alt="Football Suisse Romande" class="stats-bg">
 
     <div class="bubble bubble-1">
       <strong data-bind-global="count"></strong>
@@ -62,18 +64,18 @@
             <p>Comparaison des pratiques digitales de clubs amateurs et semi-professionnels.</p>
           </div>
           <div class="benefit">
-            <img src="instagram-logo.svg" alt="Analyse" class="icon">
+            <img src="instagram-logo.svg" alt="Instagram" class="icon">
             <h3><strong>Réseaux et Sites web</strong></h3>
             <p>Analyse des contenus, de l’engagement et de la visibilité.</p>
           </div>
           <div class="benefit">
-          <img src="brain.svg" alt="Analyse" class="icon">
+          <img src="brain.svg" alt="Insights" class="icon">
             <h3><strong>Insights concrets</strong></h3>
             <p>Forces, faiblesses et tendances communes du football
               régional.</p>
           </div>
           <div class="benefit">
-            <img src="user-check.svg" alt="Analyse" class="icon">
+            <img src="user-check.svg" alt="Professionnelle" class="icon">
             <h3><strong>Approche professionnelle</strong></h3>
             <p>Méthodologie inspirée des pratiques du marketing digital.</p>
           </div>
@@ -99,7 +101,9 @@
         <!-- data-bind-global="count" : Affiche le nombre total de rapports (métadonnées globales) -->
       <h1 data-bind-global="count"></h1><h1 class="clubsTitle">  Clubs analysés en janvier 2026</h1>
   
-      
+        <section id="scroll-team-logo">
+        <div id="teamList"></div>
+    </section>
 
       <!-- id="teamList" : Conteneur où seront ajoutés dynamiquement les éléments de l'équipe. Le nom de cet ID ne doit pas être modifié. -->
       <section id="teamList">
